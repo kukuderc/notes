@@ -1,13 +1,7 @@
-# MurphyChen's Notes
-
-- 稳定地址：https://docs.mphy.top
-- 未来不迷路：https://github.com/Hacker-C/notes
-
-以前学习记录的笔记，分享出来，自己也作为参考。欢迎各位指正错误或提出讨论（建议 PR）。
+# rc's Notes
 
 ---
-
-离线文档下载：点击本站右上角 github logo 即可获取。整理不易，不要忘了给个 star 和 follow。
+整体网站及代码copy自：https://docs.mphy.top/#/
 
 使用方法：
 
