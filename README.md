@@ -5,4 +5,4 @@
 
 - [首页](#)
 - [生活篇](living-tips/生活篇.md)
-- [第二页](./another-page.md)
+- [学习篇](./another-page.md)
