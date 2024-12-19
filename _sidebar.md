@@ -1,3 +1,3 @@
 - [首页](README.md)
-- [生活篇](living-tips.md)
+- [生活篇](生活篇.md)
 - [第二页](another-page.md)
