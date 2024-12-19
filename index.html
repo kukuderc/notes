@@ -1,37 +1,92 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>我的文档站点</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="app-container">
-        <aside class="sidebar">
-            <div class="sidebar-header">
-                <h2>文档目录</h2>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">生活篇</a></li>
-                    <li><a href="#">学习篇</a></li>
-                    <li><a href="#">关于</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="content">
-            <header class="content-header">
-                <h1>欢迎来到我的文档站点</h1>
-            </header>
-            <section class="content-body">
-                <h2>文档内容</h2>
-                <p>这里是详细的文档内容，点击侧边栏的链接来查看不同的页面。</p>
-            </section>
-        </main>
-    </div>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+    <style>
+      /* 页面背景和字体 */
+      body {
+        background: #f0f0f0 url('https://example.com/your-background.jpg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Arial', sans-serif;
+        color: #333;
+      }
 
+      /* 内容区域 */
+      .content {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 8px;
+      }
+
+      /* 侧边栏样式 */
+      #app {
+        display: flex;
+        justify-content: space-between;
+      }
+      #sidebar {
+        width: 250px;
+        background: #2c3e50;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        overflow-y: auto;
+      }
+      #sidebar a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        margin: 10px 0;
+      }
+      #sidebar a:hover {
+        text-decoration: underline;
+      }
+
+      /* 主内容区 */
+      .main-content {
+        margin-left: 260px;
+        padding: 20px;
+        flex-grow: 1;
+      }
+
+      /* 调整标题的样式 */
+      h1, h2, h3 {
+        color: #2c3e50;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 侧边栏 -->
+      <div id="sidebar">
+        <h2>文档导航</h2>
+        <ul>
+          <li><a href="#/home">首页</a></li>
+          <li><a href="#/another-page">第二页</a></li>
+          <!-- 可以在这里添加更多链接 -->
+        </ul>
+      </div>
+
+      <!-- 主内容区 -->
+      <div class="main-content">
+        <div id="app"></div>
+      </div>
+    </div>
+    <script>
+      window.$docsify = {
+        name: '我的文档站点',
+        repo: 'https://github.com/yourusername/yourrepo',
+        loadSidebar: true,
+        subMaxLevel: 2,
+        homepage: '/home', // 设置首页
+      }
+    </script>
+  </body>
+</html>
