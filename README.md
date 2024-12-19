@@ -5,4 +5,5 @@
 ## 导航
 
 - [首页](#)
+- [生活篇](living-tips.md)
 - [第二页](./another-page.md)
